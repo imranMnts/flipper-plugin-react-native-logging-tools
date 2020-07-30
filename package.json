@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
+  "name": "flipper-plugin-react-native-logging-tools",
+  "title": "RN Logging Tools",
+  "description": "An inspector for Flipper to display every event sent by React Native Logging Tools.",
+  "id": "flipper-plugin-react-native-logging-tools",
+  "main": "dist/bundle.js",
+  "bugs": "https://github.com/imranMnts/react-native-logging-tools/issues",
+  "flipperBundlerEntry": "src/index.tsx",
+  "license": "MIT",
+  "keywords": [
+    "flipper-plugin",
+    "react-native-logging-tools",
+    "react-native",
+    "log",
+    "logging",
+    "adobe",
+    "crashlytics",
+    "analytics",
+    "sentry",
+    "tealium",
+    "instabug",
+    "firebase"
+  ],
+  "icon": "apps",
+  "scripts": {
+    "lint": "flipper-pkg lint",
+    "prepack": "flipper-pkg lint && flipper-pkg bundle",
+    "build": "flipper-pkg bundle",
+    "watch": "flipper-pkg bundle --watch"
+  },
+  "peerDependencies": {
+    "flipper": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "flipper": "latest",
+    "flipper-pkg": "latest"
+  }
+}

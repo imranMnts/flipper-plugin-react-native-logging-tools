@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.watchmanconfig
+.eslintignore
+.github
+.idea
+
+README.md
